@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Sentinel</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Mon, 05 Oct 2026 12:30:59 +1300</pubDate>
+            <sparkle:version>66</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.1.0.zip" length="7978513" type="application/octet-stream" sparkle:edSignature="ToAsL0AmWKLuGxezl303lQZ91BBMsTI8GJ/Um1S67TdLscpoDBVkamFhzBw3hMoj5mgHPnnWxCZ5EZbufjC6CQ=="/>
+        </item>
+    </channel>
+</rss>
