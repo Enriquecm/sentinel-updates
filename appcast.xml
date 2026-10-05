@@ -3,6 +3,14 @@
     <channel>
         <title>Sentinel</title>
         <item>
+            <title>0.1.1</title>
+            <pubDate>Mon, 05 Oct 2026 15:26:45 +1300</pubDate>
+            <sparkle:version>79</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.1.1.zip" length="8498450" type="application/octet-stream" sparkle:edSignature="NbLETnpaqteuD9y68qmLqRYFcENciXd4qcTVXj+pMJ8coo3b3itZIqvJMo/BM3z35BpcMMvF9mdrn+aGS/2fBw=="/>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Mon, 05 Oct 2026 12:30:59 +1300</pubDate>
             <sparkle:version>66</sparkle:version>
