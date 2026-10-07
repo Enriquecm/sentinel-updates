@@ -1,14 +1,4 @@
-<?xml version="1.0" standalone="yes"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-    <channel>
-        <title>Sentinel</title>
-        <item>
-            <title>0.2.0</title>
-            <pubDate>Thu, 08 Oct 2026 12:35:22 +1300</pubDate>
-            <sparkle:version>124</sparkle:version>
-            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Sentinel 0.2.0
+# Sentinel 0.2.0
 
 First Phase 2 release (V1 polish, D70, D71, D77): work packages 2.1 to 2.12.
 
@@ -29,24 +19,3 @@ First Phase 2 release (V1 polish, D70, D71, D77): work packages 2.1 to 2.12.
 - Findings: reply on a published finding's thread on GitHub or GitLab, resolve the thread, or both; Draft with AI writes the reply for you to edit and send (US-10.10).
 - Published findings follow their code when lines are inserted above them or the branch is rebased; they go stale only when the lines under them change (US-9.11).
 - AI sessions: ask about the whole review in the session's own conversation, where the AI can propose new findings; Compare shows a session against another one: new, fixed and still present (US-9.9).
-]]></description>
-            <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.2.0.zip" length="9469646" type="application/octet-stream" sparkle:edSignature="hHCflYhdRu5e0OxH/2GRR6hWzzYgGWCnOywSpIQZJPQ00xWr/0uVgH1GzxK15Z8hg2B7+27iD21SlhOit1nBAw=="/>
-        </item>
-        <item>
-            <title>0.1.2</title>
-            <pubDate>Tue, 06 Oct 2026 13:04:39 +1300</pubDate>
-            <sparkle:version>83</sparkle:version>
-            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.1.2.zip" length="8512547" type="application/octet-stream" sparkle:edSignature="ACzfYV17xXtbeXQnnyP8k+LCE68uPjjmS9hRxO9vtyDCKxUbFlNoqDW5TzM5PUW0QyH+cXTM8EeyarfhVrUKCA=="/>
-        </item>
-        <item>
-            <title>0.1.1</title>
-            <pubDate>Mon, 05 Oct 2026 15:26:45 +1300</pubDate>
-            <sparkle:version>79</sparkle:version>
-            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.1.1.zip" length="8498450" type="application/octet-stream" sparkle:edSignature="NbLETnpaqteuD9y68qmLqRYFcENciXd4qcTVXj+pMJ8coo3b3itZIqvJMo/BM3z35BpcMMvF9mdrn+aGS/2fBw=="/>
-        </item>
-    </channel>
-</rss>
