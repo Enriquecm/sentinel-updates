@@ -10,41 +10,25 @@
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# Sentinel 0.5.0
 
-Released on 06/11/2026 (build 449).
+Released on 06/11/2026.
 
-The first modules: the context of a pull request or merge request, kept current, and Topics that group the work around one subject; the Settings window rebuilt as System Settings; following repositories you are not a member of; Undo and Redo; back and forward. Work packages 3.1 to 3.34 of Phase 3 (D115–D201).
+Sentinel now gathers the context around a pull request or merge request, groups related work into Topics, and has a new Settings window.
 
-**Context**
+## New
 
-- Settings → Context turns the Context module on. It reads your own Claude Code's MCP servers, read-only: Settings → Sources lists them, signs you in where a server asks, and lets you mark the read tools of a server Sentinel does not know (US-15.1, US-16.1 to US-16.4).
-- A pull request's or merge request's Context tab gathers what it relates to, from its sources (Slack, Jira, Bitrise, Confluence, Claude Code sessions and others), into a summary whose every statement names its records. You follow a gather as it runs, stop it, read what the AI found and confirm or dismiss it, open each record, and go back to an earlier update (US-17.1 to US-17.8).
-- A context is checked when its tab shows and it is older than the age you choose, under a daily limit of automatic reads. The tab and the rows say when it was last checked, what changed since you last looked, and when an update is not seen yet (US-17.9 to US-17.12).
-- The repository bar says when its list was last updated, and the item's header when the item was last read (D147, D148).
+- **Context.** A pull request's Context tab gathers what relates to it from Slack, Jira, Bitrise, Confluence and your Claude Code sessions into a summary that links every source. Sentinel reads them through your own Claude Code's MCP servers, read-only. Turn it on in Settings → Context; Sentinel keeps it current and shows what changed since you last looked.
+- **Topics.** Group pull requests, merge requests and links about one subject. Sentinel suggests a Topic when items share a ticket, a thread or a build. Add an item with ⌥⌘T, and follow a Topic to hear when it changes.
+- **AI spending.** Settings → AI → Usage and budget shows what AI runs cost by day, module and model. Set a daily or monthly budget: Sentinel warns at 80% and pauses automatic runs when you reach it. The runs you start yourself keep working.
+- **Follow any repository.** Paste the URL of a repository you are not a member of, such as a public project, in Add Repository. Sentinel never publishes there by itself.
+- **Undo and Redo** (⌘Z, ⇧⌘Z) for your actions in Sentinel, such as Start Review, Mark Done or accepting a finding. Comments on GitHub or GitLab are not undone.
+- **Back and forward** between the places you visited, with ⌘[ and ⌘] or the arrows in the toolbar.
 
-**AI usage and the spending guard**
+## Improved
 
-- Every AI run is recorded, whatever started it. Settings → AI › Usage and budget shows today, 7 and 30 days, split by module, feature and model; Home shows today's use (US-18.1, US-18.2).
-- A daily budget ($10 to start) and an optional monthly one: Sentinel warns at 80% and, at the budget, stops automatic runs until the next day, saying where it stopped one; the runs you ask for keep running (US-18.3, US-18.4).
-
-**Topics**
-
-- Topics in the sidebar group pull requests, merge requests and links about one subject, with a state, a History and a context of their own gathered from their items' contexts and their own links (US-20.1 to US-20.5).
-- Sentinel suggests a Topic when items share a ticket, a thread or a build, or when the AI proposes one; you accept, edit or dismiss it, and a dismissed one comes back only when what it rested on changed, or when you restore it (US-20.6).
-- A merge request's Topics tab, Add to Topic (⌥⌘T), and a popover on each of a Topic's pull requests or merge requests with how it stands, with Open in New Window (US-20.7, US-20.4).
-- Follow a Topic to have it read at an interval and to be told when it changes; Topics is a module that can be turned off, keeping or deleting its data (US-20.8 to US-20.12).
-
-**Settings**
-
-- One window as System Settings: a sidebar with search, ‹ › between the pages, changes that apply at once and Apply for the ones that cost (US-19.1, US-19.2).
-- Accounts holds each connection and repository as a page, and the Defaults every repository follows until it has its own value; Review, Context and Topics have panes of their own, and each source a page (US-19.3 to US-19.6).
-
-**Review**
-
-- Follow a repository you are not a member of, such as a public project, by pasting its URL in Add Repository. Sentinel never publishes there by itself, keeps AI Review at Manual to start, and shows each write your access does not allow disabled with why; the repository carries a NOT A MEMBER tag, and if you stop being a member, automatic publishing turns off and Sentinel tells you (US-21.1 to US-21.3).
-- The list's search, New Topic's and the Topics list's find a pull request or merge request by its number: 57, !57 or #57 (D198).
-- Edit › Undo and Redo (⌘Z, ⇧⌘Z) undo your own actions on Sentinel's data, per window: Start Review and Mark Done, the queue, a finding's Accept or Ignore, Mark All Read, a Topic's state, links, title and follow, and a mute. A step is undone only while it is as you left it, and Sentinel says why when it is not; writes on GitHub or GitLab are not undone (US-22.1, US-22.2).
-- ‹ › in the main window's toolbar, ⌘[ ⌘], and ⌘← ⌘→ outside a text field go back and forward between the places you visited (US-23.1).
-- The context of a closed or merged pull request or merge request is no longer checked by itself (D197), and Refresh Items in a Topic shows that it is working.
+- Settings is rebuilt like System Settings, with search and a page for each account, repository and source.
+- Search finds a pull request or merge request by its number: 57, !57 or #57.
+- The repository bar shows when its list was last updated.
+- Sentinel no longer checks the context of closed or merged items.
 ]]></description>
             <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.5.0.zip" length="22896098" type="application/octet-stream" sparkle:edSignature="jVip7cBxO86QMfUP1E5FGzuzgur7Gg1JQbtK8vvcttgHaOHKaqq6H8NYsXVQ+69ufuNOi8FbDlbWjYXCWdsFBQ=="/>
         </item>
@@ -56,23 +40,23 @@ The first modules: the context of a pull request or merge request, kept current,
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# Sentinel 0.4.0
 
-Released on 19/10/2026 (build 227).
+Released on 19/10/2026.
 
-The right bar beside the detail, over it or in a window of its own, and the conversations with the AI rebuilt around one chat per item, with a terminal in the item's window: work packages 2.34 to 2.47 of Phase 2 (D101–D110).
+One chat per pull request or merge request, a window of its own for each item, and a terminal that runs Claude Code on Sentinel's copy of the code.
 
-- The right bar can sit beside the detail or over it. Switch with the control in its header or View › Right Bar › Beside / Over (⌃⌥⌘0); the choice is remembered, and switching keeps the tab, the scroll position and what you were typing. Over leaves the columns as they are and closes with Escape (US-4.22).
-- Open in New Window gives an item a window of its own, one per item, from the bar's header, the row's context menu, a double-click on a row, the detail header's ⋯ menu or Item › Open in New Window (⌘O). It has Details, Chat, Sessions and Terminal, keeps its size and position, and comes back at the next launch (US-4.23, US-4.25).
-- An item open in the main window and in its own window is the same in both: a message sent or a session cancelled in one shows in the other at once (US-4.24).
-- ⌘R refreshes the item in front, ⇧⌘R refreshes everything, and ⌥⌘1 to ⌥⌘4 pick the bar's tabs (US-4.25).
-- One chat per item: the conversation about the whole pull request or merge request, each session's and each finding's read as one list, each run of messages tagged with its scope. Type @ to ask about a session or a finding; the filter shows one scope at a time (US-9.14).
-- Replies appear as they are written, after the files the AI opens; Stop (⌘.) keeps what arrived (US-9.15).
-- Copy a message as Markdown or plain text, a code block on its own, or a path; Quote the message or the part you selected; ⇧⌘C copies the last answer; Export… saves the conversation, or the scope you filtered, as Markdown (US-9.16).
-- Use an answer as a new draft, a revision of a finding, a reply on a thread, the body of an approval or a request for changes, or the focus of the next review. Findings and revisions the AI proposes arrive as cards you add, edit or discard; nothing joins Review until you add it (US-9.17, US-9.18).
-- Revise a draft or a comment Sentinel published from a conversation: the card shows the change word by word, and a published comment changes on GitHub or GitLab only after Update Comment (US-9.18).
-- Drafts from a conversation are marked Proposed in Chat in Review, with Show in Chat, and appear at the time you added them. Drafts about the whole pull request or merge request are kept in a Chat session (D105, D110).
-- Sessions shows the runs: Ask in Chat, Open Terminal, Compare…, and Open in your terminal app (US-4.21).
-- A Terminal tab in the item's window runs Claude Code, or a command you choose, in Sentinel's copy of the item, never in your clone; it continues the chat or a session. Sentinel offers the agent its tools, which can only propose findings and revisions for you to add (US-8.12, US-8.13).
-- Settings → AI Backend → Terminal: the app sessions open in outside Sentinel (Terminal, iTerm or another), and the custom command for the Terminal tab (US-8.14).
+## New
+
+- **Open in New Window** (⌘O) gives an item a window of its own, with Details, Chat, Sessions and Terminal. It comes back at the next launch.
+- **One chat per item** about the whole pull request or merge request, its sessions and its findings. Type @ to ask about a session or a finding. Replies appear as they are written, and Stop (⌘.) keeps what arrived.
+- **Turn answers into work**: a new draft, a revised finding, a reply on a thread or the text of an approval. What the AI proposes arrives as a card you add, edit or discard, and a published comment changes only after Update Comment.
+- **Terminal tab** that runs Claude Code, or a command you choose, on Sentinel's copy of the item, never in your clone.
+- **Right bar beside or over the detail** (⌃⌥⌘0).
+
+## Improved
+
+- Copy a message as Markdown or plain text, quote it, or export the conversation. ⇧⌘C copies the last answer.
+- ⌘R refreshes the item in front, ⇧⌘R refreshes everything, and ⌥⌘1 to ⌥⌘4 pick the right bar's tabs.
+- Settings → AI Backend → Terminal chooses the terminal app sessions open in.
 ]]></description>
             <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.4.0.zip" length="16544337" type="application/octet-stream" sparkle:edSignature="PCJN1SOTXvo8uMwUfBMQeAwS6phJKe4Bvq5qPxAA01VwjRGw/NV3uqOb9UhMpVe9zeAwbBs8+3LtoWtb/wNQAg=="/>
         </item>
@@ -84,33 +68,32 @@ The right bar beside the detail, over it or in a window of its own, and the conv
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# Sentinel 0.3.0
 
-Released on 12/10/2026 (build 199).
+Released on 12/10/2026.
 
-A new design for the whole app, in a dark and a light appearance, and work packages 2.14 to 2.33 of Phase 2 (D85–D100).
+A new design for the whole app, in dark and light, with a new sidebar, list and item detail.
 
-- A new look in the dark and the light appearance; Settings → General → Appearance follows the system or keeps one of them (US-14.5).
-- Sidebar: one row per repository, grouped by connection, with Claude Code's status pinned at the bottom; each repository and connection has a popover with its details and actions, and a repository can have its own icon (US-4.13, US-1.6, US-2.8).
-- Mini sidebar: collapse the sidebar to an 84pt rail of tiles with ⇤, View › Compact Sidebar (⌃⌥⌘S) or by dragging its edge; letting go snaps it to the rail or the full sidebar. Hovering a repository shows its destinations (US-4.14).
-- The list has a new header: the repository, the Pull Requests or Merge Requests and Queue tabs with badges for new activity, and the filters with their chips. Each row splits its status into three capsules: Sentinel's review state, the AI review and the provider's checks, each with a tooltip (US-4.13, US-4.16).
-- Filters: Quick chips for the common ones, and a page per group in the filters popover. New filters: review requested from me, assigned to me, several authors, reviewers or labels, GitLab approvals left, and the severity of open findings (US-4.17, US-4.12).
-- View › List Density: Compact or Regular. The list shows the one that fits its width, and dragging the list's edge chooses it; the width is remembered (US-4.15).
-- The four columns adapt together: each keeps a minimum width, the window cannot be made smaller than they need, and opening the right bar or expanding the sidebar makes the window wider when the detail has no room left.
-- The item header comes in three sizes with three cards: Sentinel (the review steps and the queue), the provider (checks, your review, threads) and the AI review (its state, findings and actions). It says how many commits arrived since your review and why an AI review failed, in a few words (US-4.18).
-- Approve, request changes and undo your approval from the item header, with Draft with AI for the text. On GitLab, request changes needs GitLab 18.9 or later (US-10.11).
-- The item detail has two tabs. Overview shows the description and the history. Review shows the conversation in order: comments, threads, commits, reviews, pipeline results with their failed jobs, force pushes and state changes from GitHub or GitLab, with the AI sessions and their findings as drafts in place (US-4.19, US-4.20, US-9.12).
-- Reply on, resolve and unresolve any thread, people's and Sentinel's; Draft reply writes the reply for you to edit and send (US-10.12).
-- The right bar has three tabs: Details, Chat and Sessions. It opens without a selected item too, and keeps its width when you select one (US-4.21).
-- Chat: ask about the whole pull request or merge request (what to test, the riskiest change, a summary); the answers can point to drafts and checks, and the conversation is kept. Chat never changes a finding (US-9.13).
-- Focus the next AI review on what matters to you, in up to 500 characters ("check the token storage") (US-8.10).
-- Open a completed AI session in Terminal and continue it by hand with Claude Code; completed sessions are kept for 7 days (US-8.11).
-- Add Repository: the search finds a repository by any part of its full path, its owner or group included, among the repositories the connection can access (US-2.1).
-- Items are named the way their provider names them, #42 on GitHub and !42 on GitLab, and item notifications say the item's review state (US-11.9).
-- Notifications when, on a queued item, CI fails or passes again (on by default), the review decision changes, or merge conflicts appear (both off by default) (US-11.10).
-- Menu bar: queued items show their checks, how long they have been in the queue and what is new; the icon marks an AI review that failed while you were away, and the menu shows unread notifications (US-12.5).
-- Fixed: Cancel did not always stop a running AI review, which then stayed Running; it now stops it and records it as cancelled.
-- Fixed: a long line of code in a comment or a draft could freeze the item detail.
-- Fixed: emptying a connection's name now gives it back its username, and a repository's icon follows its nickname.
-- Fixed: Draft reply shows that the AI is writing, and the focus field waits while a review runs.
+## New
+
+- **A new look** in dark and light. Settings → General → Appearance follows the system or keeps one.
+- **Sidebar** with one row per repository, grouped by connection, that collapses to a compact rail (⌃⌥⌘S).
+- **Item header** with three cards: your review, the provider's checks and the AI review, including why an AI review failed.
+- **The Review tab** shows the whole conversation in order: comments, threads, commits and pipelines, with the AI's findings as drafts in place.
+- **Approve or request changes** from Sentinel, with Draft with AI for the text (request changes needs GitLab 18.9 or later). Reply on, resolve and unresolve any thread.
+- **Chat** about a whole pull request or merge request: what to test, the riskiest change, a summary.
+- **Focus the next AI review** on what matters to you, such as "check the token storage".
+- **More filters**: review requested from me, assigned to me, several authors or labels, GitLab approvals left, and the severity of open findings, with quick chips for the common ones.
+- **Notifications** when CI fails or passes again on a queued item, when the review decision changes, or when merge conflicts appear.
+
+## Improved
+
+- Compact or Regular list density, and columns that adapt to the window.
+- Add Repository finds a repository by any part of its path.
+- Continue a completed AI session by hand in Terminal.
+
+## Fixed
+
+- Cancel did not always stop a running AI review.
+- A long line of code in a comment could freeze the item detail.
 ]]></description>
             <enclosure url="https://enriquecm.github.io/sentinel-updates/Sentinel-0.3.0.zip" length="12753865" type="application/octet-stream" sparkle:edSignature="HWFchfb6y1uoEOp+D0Dfa0ivCnPCPcTxyi4azNsDLFapoHupwi19tKprBOzHR1TaY0B68L52jhAc2XFAJ5sVCQ=="/>
         </item>
